@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
 
+/* Resetando definições padrão */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,10 +13,12 @@ body {
   color: #F6F6F6;
 }
 
-#container-header {
+/* Container do cabeçalho */
+.container-header {
   padding: 35px 0 0 270px;
 }
 
+/* links do cabeçalho */
 .header-links {
   color: #22d4fd;
   text-decoration: none;
@@ -27,10 +31,12 @@ body {
   border-bottom: 1px solid white;
 }
 
+/* Titulo principal do site */
 .titulo-destaque {
   color: #2347fc;
 }
 
+/* Imagem do conteúdo principal */
 main img {
   width: 350px;
   height: 525px;
@@ -44,6 +50,7 @@ main img {
   margin: 6% 15%;
 }
 
+/* Container com o conteúdo principal - main */
 .apresentaçao-conteudo {
   width: 615px;
   display: flex;
@@ -61,6 +68,7 @@ main img {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* container dos botões das redes sociais */
 .apresentacao #apresentacao-links-buttons {
   display: flex;
   flex-direction: column;
@@ -75,6 +83,7 @@ main img {
   font-size: 24px;
 }
 
+/* imagens das redes sociais */
 .apresentacao #apresentacao-links-buttons img {
   width: 30px;
   height: 30px;
@@ -99,9 +108,9 @@ main img {
   background-color: #141518;
 }
 
+/* rodapé do site */
 footer {
   background-color: #22d4fd;
-
 }
 
 footer p {
