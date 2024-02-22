@@ -7,9 +7,18 @@
   box-sizing: border-box;
 }
 
+/* Declaração de paleta de cores */
+:root {
+  --cor-primaria: #000000;
+  --cor-secundaria: #f6f6f6;
+  --cor-terciaria: #2347fc;
+  --fonte-primaria: 'Krona-one', sans-serif;
+  --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
 body {
   box-sizing: border-box;
-  background-color: #000000;
+  background-color: var(--cor-primaria);
   color: #F6F6F6;
 }
 
@@ -20,20 +29,21 @@ body {
 
 /* links do cabeçalho */
 .header-links {
-  color: #22d4fd;
+  color: var(--cor-terciaria);
   text-decoration: none;
   font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-family: var(--fonte-secundaria);
   margin: 0 15px 0 15px;
 }
 
 .header-links:hover {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--cor-secundaria);
 }
 
 /* Titulo principal do site */
 .titulo-destaque {
-  color: #2347fc;
+  color: var(--cor-terciaria);
 }
 
 /* Imagem do conteúdo principal */
@@ -60,12 +70,12 @@ main img {
 
 .apresentaçao-conteudo h1 {
   font-size: 36px;
-  font-family: 'Krona One', sans-serif;
+  font-family: var(--fonte-primaria);
 }
 
 .apresentaçao-conteudo p {
   font-size: 24px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--fonte-secundaria);
 }
 
 /* container dos botões das redes sociais */
@@ -78,7 +88,7 @@ main img {
 }
 
 .apresentacao-links-subtitulo {
-  font-family: 'Krona One', sans-serif;
+  font-family: var(--fonte-primaria);
   font-weight: 400;
   font-size: 24px;
 }
@@ -93,7 +103,7 @@ main img {
 }
 
 .apresentacao #apresentacao-links-buttons a {
-  border: 2px solid #22d4fd;
+  border: 2px solid var(--cor-terciaria);
   width: 320px;
   text-align: center;
   border-radius: 8px;
@@ -101,7 +111,8 @@ main img {
   font-size: 24px;
   padding: 10px 0;
   text-decoration: none;
-  color: #ffffff;
+  transition: all 0.5s;
+  color: var(--cor-secundaria);
 }
 
 .apresentacao #apresentacao-links-buttons a:hover {
@@ -110,13 +121,14 @@ main img {
 
 /* rodapé do site */
 footer {
-  background-color: #22d4fd;
+  background-color: var(--cor-terciaria);
 }
 
 footer p {
   padding: 20px;
   text-align: center;
   font-size: 18px;
+  font-weight: bolder;
   color: #000000;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--fonte-secundaria);
 }
